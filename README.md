@@ -2,8 +2,8 @@
 
 ## Checklist inicial
 
-- [ ] fork desse repositório
-- [ ] criar um arquivo `/relatorio.md` para relatar o que se pede abaixo
+- [x] fork desse repositório
+- [x] criar um arquivo `/relatorio.md` para relatar o que se pede abaixo
 
 ```md
 # Relato da atividade de comunicação entre processo usando sockets
@@ -14,10 +14,10 @@
 - **aluno**: Gabriel Gomes Santos
 
 ## Parte 1 — 1 servidor e 1 cliente (bloqueante)
-FIXME seu relato
+O Servidou fincionou e retornou para o cliente o "echo" da mensagem que o mesmo enviou.
 
 ## Parte 2 — 1 servidor e 2 clientes (bloqueante)
-FIXME seu relato
+O Servidor não funcionou devidamente e o segundo cliente conseguiu conectar mas não conseguiu trocar mensagens com o sistema
 
 ## Parte 3 — Modificar o servidor para múltiplos clientes
 FIXME seu relato
