@@ -11,7 +11,7 @@
 ## Informações gerais
 - **disciplina**: Sistemas operacionais
 - **semestre letivo**: 2025.2
-- **aluno**: FIXME seu nome
+- **aluno**: Gabriel Gomes Santos
 
 ## Parte 1 — 1 servidor e 1 cliente (bloqueante)
 FIXME seu relato
@@ -50,16 +50,18 @@ python3 src/cliente.py
 
 Checklist (marque ao validar):
 
-- [ ] Servidor inicia sem erros e fica aguardando conexão.
-- [ ] Cliente consegue conectar ao servidor.
-- [ ] Há troca de mensagem/serviço concluída com sucesso (ex.: resposta do servidor exibida).
+- [x] Servidor inicia sem erros e fica aguardando conexão.
+- [x] Cliente consegue conectar ao servidor.
+- [x] Há troca de mensagem/serviço concluída com sucesso (ex.: resposta do servidor exibida).
 - [ ] Conexões são encerradas limpidamente (sem stack traces inesperados).
-- [ ] Descreva brevemente a interação observada (o que o cliente pediu e o que o servidor retornou).
+- [x] Descreva brevemente a interação observada: O servidor Recebe a mensagem e envia a mesma como resposta.
 
 Critérios de aceitação:
 
-- Servidor permanece estável após o término do cliente; nenhuma exceção não tratada.
+- Servidor permanece estável após o término do cliente; nenhuma exceção não tratada. 
+- [x] Evento ocorre como descrito.
 - Cliente finaliza com código de saída 0 e saída coerente (mensagens esperadas).
+- [x] Ele recebe a mensagem e sai da conexão
 
 ### Parte 2 — 1 servidor e 2 clientes (bloqueante)
 
@@ -80,7 +82,7 @@ python3 src/cliente.py
 
 Checklist de observação:
 
-- [ ] Apenas um cliente é atendido por vez (o outro aguarda/bloqueia) OU ocorre erro de conexão para o segundo.
+- [X] Apenas um cliente é atendido por vez (o outro aguarda/bloqueia) OU ocorre erro de conexão para o segundo.
 - [ ] O servidor continua responsivo após atender o primeiro cliente.
 - [ ] O segundo cliente eventualmente é atendido ou recebe erro consistente (ex.: timeout, recusa, protocolo).
 - [ ] Registre timestamps (ou ordem) de início/fim de cada cliente para evidenciar serialização/bloqueio.
@@ -88,7 +90,7 @@ Checklist de observação:
 
 Perguntas para relatório:
 
-- O segundo cliente bloqueou? Por quanto tempo? Houve recusa imediata?
+- O segundo cliente bloqueou? Por quanto tempo? Houve recusa imediata? O segundo conseguiu se conectar com o servidor, mas não recebeu retorno do servidor
 - O servidor atende estritamente em série? O que evidencia isso?
 
 ### Parte 3 — Modificar o servidor para múltiplos clientes
